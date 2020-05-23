@@ -23,9 +23,15 @@ public class RecommendationService {
     private List<User> getRecommendations(User user, int top) {
         List<User> allRecommendations = getRecommendations(user);
         List<User> topRecommendations = new ArrayList<>();
-        for(int i = 0; i < top; i++) {
+        List<String> finalRecommend=new ArrayList<>();
+       for(int i = 0; i < top; i++) {
             topRecommendations.add(allRecommendations.get(i));
+            finalRecommend.add(topRecommendations.get(i).getName());
         }
+           
+        	System.out.println("Output: "+finalRecommend.toString());
+        	
+       
         return topRecommendations;
     }
 
