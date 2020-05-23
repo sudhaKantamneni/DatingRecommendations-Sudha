@@ -35,3 +35,29 @@ Step3 : Create new Project in local Eclipse by using the below steps:
 
 Step7 : Run test case class RecommendationServiceTest.java
 
+
+
+
+Problem Statement
+Write code for a dating recommendation engine which would find the closest match for any
+user. Each registered user is expected to have provided:
+• Name
+• Gender
+• Age
+• Interests
+Recommendation engine applies following rules in given order while identifying the closest
+matches:
+• Gender Rule: Opposite gender is given a preference.
+• Age rule: Closest match in terms of age is given a preference.
+• Interest rule: Closest match in terms of interests is given a preference.
+Example
+Let us say the system has following registered users:
+Name Gender Age Interest
+UserA Female 25 Cricket
+UserB Male 27 Cricket, Football, Movies
+UserC Male 26 Movies, Tennis, Football, Cricket
+UserD Female 24 Tennis, Football, Badminton
+UserE Female 32 Cricket, Football, Movies, Badminton
+If system is asked to fetch top 2 matches of UserB, the output should be the following list
+having matches ordered by their closeness with UserB:
+Output: [UserA, UserD]
