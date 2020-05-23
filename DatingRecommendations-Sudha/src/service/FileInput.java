@@ -6,6 +6,12 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * Class used to read the input File
+ * @author admin
+ *
+ */
 public class FileInput implements InputService {
     private String filePath;
 
