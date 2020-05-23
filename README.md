@@ -33,5 +33,5 @@ Step3 : Create new Project in local Eclipse by using the below steps:
  
          Output: [UserA, UserD]
 
-Step7 : Run test case class DependencyManagerTest.java
+Step7 : Run test case class RecommendationServiceTest.java
 
