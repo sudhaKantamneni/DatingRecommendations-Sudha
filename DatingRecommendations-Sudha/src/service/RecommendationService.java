@@ -1,19 +1,15 @@
 package service;
 
 import model.User;
-import strategy.DatingRecommendation;
-import strategy.RecommendationStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RecommendationService {
-    private UserService userService;
-    private RecommendationStrategy recommendationStrategy;
+    private Recommendation recommendation;
 
     public RecommendationService(UserService userService) {
-        this.userService = userService;
-        this.recommendationStrategy = new DatingRecommendation(userService);
+        this.recommendation = new DatingRecommendation(userService);
     }
 
     public List<User> getAllRecommendationForUser(User user) {
@@ -34,6 +30,6 @@ public class RecommendationService {
     }
 
     private List<User> getRecommendations(User user) {
-        return recommendationStrategy.makeRecommendation(user);
+        return recommendation.makeRecommendation(user);
     }
 }
