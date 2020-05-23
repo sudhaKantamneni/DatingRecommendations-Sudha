@@ -1,10 +1,15 @@
 package service;
 
+import model.Gender;
 import model.User;
-import service.UserService;
 
-import java.util.Collections;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 public class DatingRecommendation implements Recommendation {
     private UserService userService;
